@@ -21,7 +21,16 @@ git log （--pretty=oneline）
 回退：
 $ git reset --hard HEAD^（HEAD~100）
 $ git reset --hard 版本号
-git reflog查看命令历史，以便确定要回到未来的哪个版本。
+git reflog查看命令历史，以便确定要回到未来的哪个版本
+
+撤销：
+git checkout --File 让这个文件回到最近一次git commit或git add时的状态
+git reset HEAD 文件名 可以把暂存区的修改撤销掉
+
+删除：
+$ git rm 文件名
+$ git commit -m "说明"
+
 
 
 
