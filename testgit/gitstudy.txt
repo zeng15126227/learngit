@@ -1,3 +1,9 @@
+目录结构：
+.git 版本库
+index 缓存区
+HEAD 指针
+
+
 安装：
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
