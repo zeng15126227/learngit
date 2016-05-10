@@ -1,0 +1,22 @@
+安装：
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+新建仓库：
+git init
+git add "File" 把文件修改添加到暂存区
+git commit -m "说明" 把暂存区的所有内容提交到当前分支
+
+查看：
+git status
+git diff "File"
+git log （--pretty=oneline）
+
+回退：
+$ git reset --hard HEAD^（HEAD~100）
+$ git reset --hard 版本号
+git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+
+
+
