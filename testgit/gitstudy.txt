@@ -35,6 +35,16 @@ $ git commit -m "说明"
 $ git remote add origin git@github.com:zeng15126227/learngit.git
 git push origin master
 
+克隆远程库：
+$ git clone git@github.com:zeng15126227/gitskills.git
+
+分支：
+$ git checkout -b dev 创建并转换
+$ git branch dev 创建
+$ git checkout dev 转换
+
+
+
 
 
 
