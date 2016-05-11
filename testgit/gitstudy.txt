@@ -31,6 +31,10 @@ git reset HEAD 文件名 可以把暂存区的修改撤销掉
 $ git rm 文件名
 $ git commit -m "说明"
 
+链接远程库：
+$ git remote add origin git@github.com:zeng15126227/learngit.git
+git push origin master
+
 
 
 
