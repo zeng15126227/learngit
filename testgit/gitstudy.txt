@@ -33,7 +33,7 @@ $ git commit -m "说明"
 
 链接远程库：
 $ git remote add origin git@github.com:zeng15126227/learngit.git
-git push origin master
+git push origin 分支名
 
 克隆远程库：
 $ git clone git@github.com:zeng15126227/gitskills.git
@@ -51,6 +51,26 @@ git stash pop
    git stash apply
    git stash pop
 git branch -D <name> 强行删除分支
+
+多人协作：
+git remote （-v） 查看远程库
+$ git checkout -b dev origin/dev 在本地建立远程origin库dev分支
+从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+
+标签：
+git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
+git tag可以查看所有标签。
+
+
+
+
+
+
 
 
 
