@@ -1,0 +1,17 @@
+1. @before @test @ignore @after @beforeclass @afterclass
+
+2.@Test(timeout  =   1000 ) 限时测试
+
+3. @Test(expected  =  ArithmeticException. class ) 测试异常抛出
+
+4. @RunWith(TestClassRunner. class )默认runner
+   @RunWith(Parameterized. class ) 参数runner
+   @RunWith(Suite. class ) 打包测试runner
+   
+5.定义传参 @Parameters
+
+6.打包测试
+   @Suite.SuiteClasses(  {
+         CalculatorTest. class ,
+         SquareTest. class 
+         }  )
