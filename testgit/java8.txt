@@ -1,0 +1,48 @@
+1.lambda表达式：一段带有输入参数的可执行语句块（匿名内嵌类）
+
+2.lambda表达式的三个重要组成部分：
+输入参数
+可执行语句
+存放外部变量的空间
+
+3.匿名内嵌类访问外部变量，外部变量用final修饰
+
+4.方法引用：
+objectName::instanceMethod
+ClassName::staticMethod
+ClassName::instanceMethod
+
+5.构造器引用
+ClassName::new
+
+6.stream
+Stream是元素的集合，可以支持顺序和并行的对原Stream进行汇聚的操作
+
+7.使用Stream的基本步骤：
+创建Stream；
+转换Stream，每次转换原有Stream对象不改变，返回一个新的Stream对象（**可以有多次转换**）；
+对Stream进行聚合（Reduce）操作，获取想要的结果；
+
+8.1 使用Stream静态方法来创建Stream
+Stream.of（）；
+Stream.generate；
+Stream.iterate(1, item -> item + 1).limit(10).forEach(System.out::println);//其元素的生成是重复对给定的种子值(seed)调用用户指定函数来生成的。其中包含的元素可以认为是：seed，f(seed),f(f(seed))无限循环
+
+8.2 Collection.Stream()
+
+9.stream 的方法
+  http://ifeve.com/stream/
+  
+10.sum（）方法不是所有的Stream对象都有的，只有IntStream、LongStream和DoubleStream是实例才有。
+
+11.可变汇聚 collect
+
+12.其他汇聚 
+reduce 返回的是optinal类型
+count
+sum
+allMatch：是不是Stream中的所有元素都满足给定的匹配条件
+anyMatch：Stream中是否存在任何一个元素满足匹配条件
+findFirst: 返回Stream中的第一个元素，如果Stream为空，返回空Optional
+noneMatch：是不是Stream中的所有元素都不满足给定的匹配条件
+max和min：使用给定的比较器（Operator），返回Stream中的最大|最小值
