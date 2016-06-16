@@ -1,0 +1,11 @@
+1.启动 mongod.exe --dbpath c:\data\db
+2.服务（管理员cmd） mongod.exe --logpath "C:\data\dbConf\mongodb.log" --logappend --dbpath "C:\data\db" --port yourPortNumber --serviceName "YourServiceName" --serviceDisplayName "YourServiceName" --install
+3.后台shell mongo.exe
+4.查看当前文档（数据库） db
+5.显示所有数据库 show dbs
+6.切换数据库 use local(若没有则创建)
+7.删除当前数据库 db.dropDatabase()
+8.插入数据 db.集合名.insert（BSON/变量）
+9.查看 db.集合名.find()
+10.更新数据 db.集合名.update（）
+11.格式美化 db.col.find().pretty()
